@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Architecture Website{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.0.0/dist/full.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <!-- leaflet js for openstreets map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script defer src="{% static 'js/main.js' %}"></script>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .person-name {
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        
+        .person-name.active {
+            color: #000; /* Active color, you can change this */
+            font-weight: bold;
+        }
+        
+        #testimoniesWrapper {
+            scroll-behavior: smooth;
+            height: 100%;
+        }
+        
+        .testimony {
+            display: none;
+            height: 100%; /* Ensures the height is consistent */
+        }
+        
+        .testimony.active {
+            display: block; /* Only show the active testimony */
+        }
+        
+    </style>
+</head>
+<body class="relative overflow-x-hidden">
+    <!-- {% include 'header.html' %} -->
+    <main class="">
+        {% block content %}
+        {% endblock %}
+    </main>
+    {% include 'footer.html' %}
+    <!-- <button id="alertButton" class="mt-4 p-2 bg-blue-500 text-white">Click Me</button> -->
+</body>
+</html>

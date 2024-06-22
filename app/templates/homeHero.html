@@ -1,0 +1,15 @@
+{% load static %}
+
+<section id="home" class="w-full h-screen" style="background-image: url('{% static 'images/group1.jpg' %}'); background-size: cover; background-position:center">
+    {% include 'header.html' %}
+    <div class="w-full h-full flex flex-col items-center justify-center gap-5 -mt-20 text-center">
+        <h2 class="uppercase text-2xl text-white opacity-75">Siliconn Kenya</h2>
+        <h1 class="font-bold text-3xl lg:text-5xl text-center">Open-Source Tech Revolution</h1>
+        <p class="text-center leading-loose text-white">Are you learning tech and want to enhance your skills by building projects?<br/> Join<span class="uppercase"> Siliconn Kenya</span> where tech enthusiats collaborate, share knowledge and grow together.</p>
+        <div class="group relative">
+            <a href="#about" class="border border-white py-3 px-8 text-white group-hover:bg-white group-hover:text-black transition-bg ease-in-out duration-700">Explore it</a>
+            <div class="h-1 w-5 border-t border-white absolute bottom-2 -left-2 group-hover:border-black transition-bg ease-in-out duration-700"></div>
+            <div class="h-1 w-5 border-t border-white absolute bottom-2 -right-2 group-hover:border-black transition-bg ease-in-out duration-700"></div>
+        </div>
+    </div>
+</section>

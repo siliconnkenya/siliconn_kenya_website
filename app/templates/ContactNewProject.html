@@ -1,0 +1,40 @@
+{% load static %}
+
+<section id="contacts" class="w-full bg-white px-3 lg:px-28 py-32 flex flex-col lg:flex-row gap-10">
+    <div class="w-full lg:w-1/2 text-center md:text-left flex flex-col gap-5">
+        <h2 class="uppercase tracking widest text-base text-gray-900">Contact</h2>
+        <h3 class="font-bold text-black tracking-wider text-3xl">Let's start new project.</h3>
+        <div class="text-center md:text-left flex flex-col md:gap-10 leading-loose text-gray-500">
+            <p>Now, as you were able to get a picture of who we are, it is up to you to contact us and lay the foundation for a new and successful business relationship. Our team consists</p>
+        </div>
+        <div class="w-full flex flex-col lg:flex-row gap-5 mt-5">
+            <div>
+                <div class="w-32 border-b border-black mb-10 inline-block"></div>
+                <p class="uppercase text-gray-900 tracking-wide text-sm text-black mb-10">Email</p>
+                <p class="leading-loose text-gray-500">siliconnkenya@gmail.com</p>
+            </div>
+            <div>
+                <div class="w-32 border-b border-black mb-10 inline-block"></div>
+                <p class="uppercase text-gray-900 tracking-wide text-sm text-black mb-10">Twitter X</p>
+                <p class="leading-loose text-gray-500">Siliconn Kenya</p>
+            </div>
+            <div>
+                <div class="w-32 border-b border-black mb-10 inline-block"></div>
+                <p class="uppercase text-gray-900 tracking-wide text-sm text-black mb-10">Instagram</p>
+                <p class="leading-loose text-gray-500">siliconn_kenya</p>
+            </div>
+        </div>
+    </div>
+    <form class="w-full lg:w-1/2 flex flex-col justify-center gap-5">
+        <div class="w-full flex flex-col md:flex-row gap-5">
+            <input class="w-full md:w-1/2 bg-gray-100 h-12 px-5 text-black" type="text" placeholder="Name">
+            <input class="w-full md:w-1/2 bg-gray-100 h-12 px-5 text-black" type="text" placeholder="Phone">
+        </div>
+        <input class="w-full bg-gray-100 h-12 px-5 text-black" type="email" placeholder="Email">
+        <textarea class="w-full bg-gray-100 min-h-44 p-5 text-black" placeholder="Message"></textarea>
+        <button type="submit" class="group cursor-pointer flex gap-5 items-center justify-end">
+            <p class="uppercase tracking-widest text-sm text-gray-900">Send</p>
+            <i class="ri-arrow-right-line text-gray-900 transition-transform duration-500 ease-in-out group-hover:translate-x-2"></i>
+        </button>
+    </form>
+</section>
